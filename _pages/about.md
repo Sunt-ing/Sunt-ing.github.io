@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 ## Biography
-Starting in Fall 2023, I'll be a PhD student at the University of Waterloo (with David R. Cheriton Graduate Scholarship). I will be supervised by Prof. [Khuzaima Daudjee](https://cs.uwaterloo.ca/~kdaudjee/).
+I will be joining the University of Waterloo as a PhD student (with David R. Cheriton Graduate Scholarship) supervised by Prof. [Khuzaima Daudjee](https://cs.uwaterloo.ca/~kdaudjee/) in Fall 2023.
 
 I obtained my B.Eng degree in Computer Science from Southern University of Science and Technology ([SUSTech](https://www.sustech.edu.cn/en/)) with the Summa Cum Laude. SUSTech was established in 2011 ([a short story about SUSTech](http://www.nature.com/news/chinese-university-wins-degree-of-freedom-1.10631)). 
 Its Computer Science and Engineering (CSE) department, to which I belonged, was just established in 2016. 
