@@ -59,7 +59,7 @@ Department of Computer Science and Engineering
 <!-- <br> -->
 ## Teaching
 - December 2020 - June 2021: Teaching Assistant for Operating Systems
-  - **Outstanding Teaching Assistant Award** <!-- (37/121) -->
+  - Outstanding Teaching Assistant Award <!-- (37/121) -->
 - June 2019 - August 2019: Lecturer for Traditional Chinese Painting and Calligraphy
 
 ## Misc.
