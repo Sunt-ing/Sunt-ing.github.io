@@ -11,9 +11,10 @@ redirect_from:
 ## Biography
 I will be joining the University of Waterloo as a PhD student (with David R. Cheriton Graduate Scholarship) supervised by Prof. [Khuzaima Daudjee](https://cs.uwaterloo.ca/~kdaudjee/) in Fall 2023.
 
-I obtained my B.Eng degree in Computer Science from Southern University of Science and Technology ([SUSTech](https://www.sustech.edu.cn/en/)) with the Summa Cum Laude. SUSTech was established in 2011 ([a short story about SUSTech](http://www.nature.com/news/chinese-university-wins-degree-of-freedom-1.10631)). 
+I obtained my B.Eng degree in Computer Science from Southern University of Science and Technology ([SUSTech](https://www.sustech.edu.cn/en/)) with the Summa Cum Laude. 
+<!-- SUSTech was established in 2011 ([a short story about SUSTech](http://www.nature.com/news/chinese-university-wins-degree-of-freedom-1.10631)). 
 Its Computer Science and Engineering (CSE) department, to which I belonged, was just established in 2016. 
-Still, SUSTech's systems research ranks [#88](https://csrankings.org/#/fromyear/2017/toyear/2023/index?arch&comm&sec&mod&hpc&mobile&metrics&ops&plan&soft&da&bed&world) worldwide by CSRankings and SUSTech ranks [#121](https://csrankings.org/#/fromyear/2017/toyear/2023/index?all&world) combining all areas of computer science at CSRankings.
+Still, SUSTech's systems research ranks [#88](https://csrankings.org/#/fromyear/2017/toyear/2023/index?arch&comm&sec&mod&hpc&mobile&metrics&ops&plan&soft&da&bed&world) worldwide by CSRankings and SUSTech ranks [#121](https://csrankings.org/#/fromyear/2017/toyear/2023/index?all&world) combining all areas of computer science at CSRankings. -->
 
 My research interests lie in computer systems primarily, such as streaming systems, machine learning systems and cloud. During my undergraduate studies, I was advised by Prof. [Bo Tang](https://acm.sustech.edu.cn/btang/), [Xiao Yan](https://cse.sustech.edu.cn/faculty/~yanx/), and [Yuqun Zhang](https://zhangyuqun.github.io/index.html). I worked for Tencent, Baidu, and RisingWave Labs (previously known as Singularity Data).
 
