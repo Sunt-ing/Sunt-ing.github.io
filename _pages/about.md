@@ -64,5 +64,5 @@ Department of Computer Science and Engineering
 
 ## Misc.
 - I'm maintaining a systems reading list on [GitHub](https://github.com/Sunt-ing/database-system-readings), where I summarize books/papers/blogs that I read in English. I also share my explorations in the computer systems world on [Zhihu](https://www.zhihu.com/collection/817373817) in Chinese.
-- I'm interested in various art forms and am an amateur creator, collector, and appraiser of Chinese traditional painting and calligraphy. I always try to find similar beauty in the systems world and even the whole computer world, but with rationality this time.
+<!-- - I'm interested in various art forms and am an amateur creator, collector, and appraiser of Chinese traditional painting and calligraphy. I always try to find similar beauty in the systems world and even the whole computer world, but with rationality this time. -->
 - Feel free to contact me via e-mail or WeChat (sunt_ing99)! I'm open to academic collaboration and casual chatting.
