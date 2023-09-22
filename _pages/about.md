@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 ## Biography
-Starting in Fall 2023, I will be joining the University of Waterloo as a PhD student supervised by Prof. [Khuzaima Daudjee](https://cs.uwaterloo.ca/~kdaudjee/). I have been awarded a David R. Cheriton Graduate Scholarship.
+Starting in Fall 2023, I will be joining the University of Waterloo as a PhD student supervised by Prof. [Khuzaima Daudjee](https://cs.uwaterloo.ca/~kdaudjee/kdaudjee.html). I have been awarded a David R. Cheriton Graduate Scholarship.
 
 My research interests lie in computer systems, such as streaming systems, machine learning systems and cloud. 
 
