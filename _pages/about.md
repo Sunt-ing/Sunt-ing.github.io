@@ -26,6 +26,8 @@ Still, SUSTech's systems research ranks [#88](https://csrankings.org/#/fromyear/
 - June 2019 - August 2019: Lecturer for Traditional Chinese Painting and Calligraphy
 
 ## Misc.
+- Recently, I'm working on [Stick](https://github.com/Sunt-ing/stick), a PyTorch-like interesting deep learning framework.
 - I'm maintaining a systems reading list on [GitHub](https://github.com/Sunt-ing/database-system-readings), where I summarize books/papers/blogs that I read in English. I also share my explorations in the computer systems world on [Zhihu](https://www.zhihu.com/collection/817373817) in Chinese.
-<!-- - I'm interested in various art forms and am an amateur creator, collector, and appraiser of Chinese traditional painting and calligraphy. I always try to find similar beauty in the systems world and even the whole computer world, but with rationality this time. -->
+- I'm an amateur creator, collector, and appraiser of Chinese traditional painting and calligraphy. I also love various outdoor activities.
+<!-- - I always try to find similar beauty in the systems world and even the whole computer world, but with rationality this time. -->
 - Feel free to contact me! I'm open to academic collaboration and casual chatting.
