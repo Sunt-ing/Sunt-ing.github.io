@@ -11,7 +11,7 @@ redirect_from:
 ## Biography
 Starting in Fall 2023, I will be joining the University of Waterloo as a PhD student supervised by Prof. [Khuzaima Daudjee](https://cs.uwaterloo.ca/~kdaudjee/kdaudjee.html). I have been awarded a David R. Cheriton Graduate Scholarship.
 
-My research interests lie in computer systems, such as streaming systems, machine learning systems and cloud. 
+My research interests lie in computer systems, such as streaming systems, machine learning systems and cloud. I occasionally share my explorations in the systems and machine learning world on [Zhihu](https://www.zhihu.com/collection/817373817) in Chinese. 
 
 I earned my B.Eng degree in Computer Science from Southern University of Science and Technology ([SUSTech](https://www.sustech.edu.cn/en/)) with the Summa Cum Laude (also known as Top 10 Graduate). At SUSTech, I was advised by Prof. [Bo Tang](https://acm.sustech.edu.cn/btang/), [Xiao Yan](https://scholar.google.com.hk/citations?user=rzNoyOIAAAAJ), and [Yuqun Zhang](https://zhangyuqun.github.io/index.html). I once worked for Tencent, Baidu, and RisingWave Labs.
 
@@ -27,7 +27,7 @@ Still, SUSTech's systems research ranks [#88](https://csrankings.org/#/fromyear/
 
 ## Misc.
 - Recently, I'm working on [Stick](https://github.com/Sunt-ing/stick), a PyTorch-like interesting deep learning framework.
-- I'm maintaining a systems reading list on [GitHub](https://github.com/Sunt-ing/database-system-readings), where I summarize books/papers/blogs that I read in English. I also share my explorations in the computer systems world on [Zhihu](https://www.zhihu.com/collection/817373817) in Chinese.
+- I'm maintaining a systems reading list on [GitHub](https://github.com/Sunt-ing/database-system-readings), where I summarize books/papers/blogs that I read in English. 
 - I'm an amateur creator, collector, and appraiser of Chinese traditional painting and calligraphy. I also love various outdoor activities.
 <!-- - I always try to find similar beauty in the systems world and even the whole computer world, but with rationality this time. -->
 - Feel free to contact me! I'm open to academic collaboration and casual chatting.
