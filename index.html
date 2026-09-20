@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ting Sun (孙挺)</title>
+<meta name="description" content="Ting Sun works across the foundation model stack: frontier capability limits, agent post-training, and systems engineering.">
+<style>
+:root {
+  /* Base Surfaces & Ink */
+  --bg-page: #f8fafc;
+  --paper: #ffffff;
+  --line: #e2e8f0;
+  --ink: #0f172a;
+  --ink-secondary: #334155;
+  --muted: #475569;
+  --faint: #64748b;
+  --brand: #1d4ed8;
+
+  /* Theme A: Royal Cobalt */
+  --cobalt-border: #1d4ed8;
+  --cobalt-text: #1e40af;
+  --cobalt-bg: #eff6ff;
+  --cobalt-pill-border: #bfdbfe;
+
+  /* Theme B: Deep Teal */
+  --teal-border: #0f766e;
+  --teal-text: #115e59;
+  --teal-bg: #f0fdfa;
+  --teal-pill-border: #99f6e4;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg-page);
+  color: var(--ink);
+  font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  border-top: 4px solid var(--brand);
+}
+
+a { color: var(--brand); text-decoration: underline; text-underline-offset: 3px; font-weight: 500; }
+a:hover { color: #1e40af; }
+
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 32px; }
+
+/* Top Header: 姓名与两大入口全加粗高亮为蓝色 */
+.top {
+  padding: 26px 0 20px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wordmark {
+  font-size: 18px;
+  font-weight: 750;
+  color: var(--brand);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+.top-links { display: flex; gap: 20px; font-size: 14.5px; }
+.top-links a {
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 700;
+}
+.top-links a:hover { text-decoration: underline; color: #1e40af; }
+
+/* Intro / Bio (正文加粗恢复沉稳深黑) */
+.intro {
+  padding: 44px 0 36px;
+}
+.intro strong {
+  color: var(--ink);
+  font-weight: 650;
+}
+.bio { color: var(--muted); margin: 0 0 16px; font-size: 15.5px; line-height: 1.75; }
+
+/* Publications */
+.section {
+  border-top: 1px solid var(--line);
+  padding: 44px 0 60px;
+}
+.section h2 { font-size: 20px; line-height: 1.4; margin: 0 0 24px; font-weight: 750; color: var(--ink); }
+
+.paper-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 18px 20px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+.paper-header { margin-bottom: 6px; }
+
+.badge-venue {
+  display: inline-block;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+}
+
+/* 统一交替双色系统 */
+.paper-card:nth-child(odd) {
+  border-left: 4px solid var(--cobalt-border);
+}
+.paper-card:nth-child(odd) .badge-venue {
+  color: var(--cobalt-text);
+  background: var(--cobalt-bg);
+  border: 1px solid var(--cobalt-pill-border);
+}
+.paper-card:nth-child(odd) .badge-adoption {
+  color: var(--cobalt-text);
+  background: var(--cobalt-bg);
+  border: 1px solid var(--cobalt-pill-border);
+}
+
+.paper-card:nth-child(even) {
+  border-left: 4px solid var(--teal-border);
+}
+.paper-card:nth-child(even) .badge-venue {
+  color: var(--teal-text);
+  background: var(--teal-bg);
+  border: 1px solid var(--teal-pill-border);
+}
+.paper-card:nth-child(even) .badge-adoption {
+  color: var(--teal-text);
+  background: var(--teal-bg);
+  border: 1px solid var(--teal-pill-border);
+}
+
+/* Adoption Pills */
+.badge-adoption {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+.badge-adoption::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.paper-card h3 { font-size: 16.5px; margin: 0 0 4px; line-height: 1.4; font-weight: 650; }
+.paper-card h3 a { color: var(--ink); text-decoration: none; }
+.paper-card h3 a:hover { color: var(--brand); text-decoration: underline; }
+.authors { font-size: 13px; color: var(--muted); margin: 0 0 6px; }
+.authors strong { color: var(--ink); }
+.description { font-size: 13.5px; color: var(--ink-secondary); margin: 0 0 10px; line-height: 1.55; }
+.paper-footer { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12.5px; align-items: center; }
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--line);
+  padding: 28px 0 40px;
+  font-size: 13px;
+  color: var(--faint);
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <!-- Top Header: 姓名、GitHub、Google Scholar 统一加粗高亮为蓝色 -->
+  <header class="top">
+    <span class="wordmark">Ting Sun (孙挺)</span>
+    <div class="top-links">
+      <a href="https://github.com/Sunt-ing">GitHub</a>
+      <a href="https://scholar.google.com/citations?hl=en&amp;user=xnnSLJIAAAAJ">Google Scholar</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Intro / Bio (加粗字重返纯净深黑色) -->
+    <section class="intro">
+      <!-- 1. 当前使命与重心 -->
+      <p class="bio" style="font-size: 16.5px; color: var(--ink); line-height: 1.65; margin-bottom: 14px;">
+        I'm currently at <strong>Wizard Quant</strong>, working on recursive self-improvement (RSI) for foundation models. My focus is on training and evaluation reliability and efficiency, maximizing iteration velocity across self-improving loops.
+      </p>
+
+      <!-- 2. 学术发表与四大巨头采用 -->
+      <p class="bio" style="margin-bottom: 14px;">
+        My research appears in <strong>Nature</strong>, <strong>NeurIPS</strong>, and <strong>EMNLP</strong>, and has been adopted across <strong>OpenAI</strong>, <strong>Anthropic</strong>, <strong>Google</strong>, and <strong>xAI</strong>. Previously with <strong>UIUC MLSys</strong>, awarded the <em>David R. Cheriton Fellowship</em> at <strong>UWaterloo</strong>, and graduated <em>summa cum laude</em> from <strong>SUSTech</strong>.
+      </p>
+
+      <!-- 3. 技术全栈与开源贡献 -->
+      <p class="bio" style="margin-bottom: 16px;">
+        My work spans <strong>distributed training</strong>, <strong>inference</strong>, <strong>evaluation</strong>, and <strong>data infrastructure</strong>. I am an open-source enthusiast and have contributed to projects including vLLM, SGLang, Transformers, Megatron-LM, PyTorch, and RisingWave.
+      </p>
+
+      <!-- 4. 轻松幽默且自然的个人质感 -->
+      <p class="bio" style="margin-bottom: 0;">
+        I write about tech on <a href="https://www.zhihu.com/people/sunt-ing">Zhihu</a> and share travel photos on <a href="https://www.instagram.com/sunt_ing314/">Instagram</a> to document life outside the terminal. Feel free to <a href="mailto:suntcrick@gmail.com">email me</a> for research discussions, collaborations, or whatever else.
+      </p>
+    </section>
+
+    <!-- Publications -->
+    <section class="section">
+      <h2>Publications</h2>
+      <div>
+        <!-- 1. Nature HLE (Odd: Cobalt Blue) -->
+        <article class="paper-card">
+          <div class="paper-header">
+            <span class="badge-venue">Nature 2026</span>
+          </div>
+          <h3><a href="https://www.nature.com/articles/s41586-025-09962-4">A Benchmark of Expert-Level Academic Questions to Assess AI Capabilities</a></h3>
+          <p class="authors">Center for AI Safety, Scale AI, and HLE Consortium (including <strong>Ting Sun</strong>)</p>
+          <p class="description">
+            The global gold-standard benchmark probing expert-level academic reasoning across frontier models. Contributed 40 accepted questions that stumped all leading models tested at release.
+          </p>
+          <div class="paper-footer">
+            <a href="https://www.nature.com/articles/s41586-025-09962-4">Paper</a>
+            <a href="https://lastexam.ai/">Project</a>
+            <span class="badge-adoption">Adopted by OpenAI, Anthropic, Google DeepMind, Meta, and xAI</span>
+          </div>
+        </article>
+
+        <!-- 2. Agents' Last Exam (Even: Deep Teal) -->
+        <article class="paper-card">
+          <div class="paper-header">
+            <span class="badge-venue">arXiv 2026</span>
+          </div>
+          <h3><a href="https://arxiv.org/abs/2606.05405">Agents’ Last Exam</a></h3>
+          <p class="authors">ALE Consortium (including <strong>Ting Sun</strong>)</p>
+          <p class="description">
+            The headline benchmark evaluating autonomous coding and reasoning agents across 55 professional subdomains with ground-truth execution checks.
+          </p>
+          <div class="paper-footer">
+            <a href="https://arxiv.org/abs/2606.05405">Paper</a>
+            <a href="https://agents-last-exam.org/">Project</a>
+            <a href="https://agents-last-exam.org/leaderboard">Leaderboard</a>
+            <a href="https://snorkel.ai/leaderboard/agents-last-exam/">Snorkel AI</a>
+            <span class="badge-adoption">Adopted by OpenAI, Anthropic, Google, xAI, and Microsoft</span>
+          </div>
+        </article>
+
+        <!-- 3. BatchWeave (Odd: Cobalt Blue) -->
+        <article class="paper-card">
+          <div class="paper-header">
+            <span class="badge-venue">arXiv 2026</span>
+          </div>
+          <h3><a href="https://arxiv.org/abs/2605.09994">BatchWeave: A Consistent Object-Store-Native Data Plane for Large Foundation Model Training</a></h3>
+          <p class="authors"><strong>Ting Sun</strong>, Junjie Zhang, Xiao Yan, Songxin Zhang, Zhuoyang Song, Jingyi Xi, Zunyao Mao, Bingyi Jing, Jiaxing Zhang, Zejian Xie</p>
+          <p class="description">
+            A brokerless training data plane providing transactional global batches, decentralized adaptive commits, and end-to-end exactly-once semantics without ingestion bottlenecks.
+          </p>
+          <div class="paper-footer">
+            <a href="https://arxiv.org/abs/2605.09994">Paper</a>
+            <a href="https://github.com/Sunt-ing/lakestream-code">Code</a>
+          </div>
+        </article>
+
+        <!-- 4. GameGen-Verifier (Even: Deep Teal) -->
+        <article class="paper-card">
+          <div class="paper-header">
+            <span class="badge-venue">arXiv 2026</span>
+          </div>
+          <h3><a href="https://arxiv.org/abs/2605.07442">GameGen-Verifier: Parallel Keypoint-Based Verification for LLM-Generated Games via Runtime State Injection</a></h3>
+          <p class="authors">Chaobo Jia*, Ruipeng Wan*, <strong>Ting Sun</strong>*, Weihao Tan, Borui Wan, Yuxuan Tong, Guangming Sheng, Hong Xu (*Equal contribution)</p>
+          <p class="description">
+            Parallel keypoint-based automated verification for LLM-generated interactive environments via runtime state injection and bounded execution. Guided project as senior member.
+          </p>
+          <div class="paper-footer">
+            <a href="https://arxiv.org/abs/2605.07442">Paper</a>
+          </div>
+        </article>
+
+        <!-- 5. HyGen (Odd: Cobalt Blue) -->
+        <article class="paper-card">
+          <div class="paper-header">
+            <span class="badge-venue">NeurIPS 2025</span>
+          </div>
+          <h3><a href="https://arxiv.org/abs/2501.14808">HyGen: Efficient LLM Serving via Elastic Online-Offline Request Co-location</a></h3>
+          <p class="authors"><strong>Ting Sun</strong>*, Penghan Wang*, and Fan Lai (*Equal contribution)</p>
+          <p class="description">
+            SLO-aware request co-location recovering idle serving cycles for up to 5.84× offline throughput gains without latency violations.
+          </p>
+          <div class="paper-footer">
+            <a href="https://arxiv.org/abs/2501.14808">Paper</a>
+            <a href="https://github.com/UIUC-MLSys/HyGen">Code</a>
+          </div>
+        </article>
+
+        <!-- 6. DiSCo (Even: Deep Teal) -->
+        <article class="paper-card">
+          <div class="paper-header">
+            <span class="badge-venue">ACL 2025</span>
+          </div>
+          <h3><a href="https://aclanthology.org/2025.findings-acl.734/">DiSCo: Device-Server Collaborative LLM-Based Text Streaming Services</a></h3>
+          <p class="authors"><strong>Ting Sun</strong>, Penghan Wang, and Fan Lai</p>
+          <p class="description">
+            Device-server collaborative streaming inference optimizing time-to-first-token (TTFT) via cost-constrained request dispatching and token-level migration.
+          </p>
+          <div class="paper-footer">
+            <a href="https://aclanthology.org/2025.findings-acl.734/">Paper</a>
+          </div>
+        </article>
+
+        <!-- 7. L0 RL Agent (Odd: Cobalt Blue) -->
+        <article class="paper-card">
+          <div class="paper-header">
+            <span class="badge-venue">arXiv 2025</span>
+          </div>
+          <h3><a href="https://arxiv.org/abs/2506.23667">L0: Reinforcement Learning to Become General Agents</a></h3>
+          <p class="authors">Junjie Zhang, Jingyi Xi, Zhuoyang Song, Junyu Lu, Yuhua Ke, <strong>Ting Sun</strong>, Yukun Yang, Jiaxing Zhang, Songxin Zhang, Zejian Xie</p>
+          <p class="description">
+            End-to-end RL training framework for autonomous agents executing in persistent Python loops (NB-Agent), boosting SimpleQA factuality from 30% to 80%.
+          </p>
+          <div class="paper-footer">
+            <a href="https://arxiv.org/abs/2506.23667">Paper</a>
+          </div>
+        </article>
+
+        <!-- 8. SHIELD (Even: Deep Teal) -->
+        <article class="paper-card">
+          <div class="paper-header">
+            <span class="badge-venue">EMNLP 2024</span>
+          </div>
+          <h3><a href="https://aclanthology.org/2024.emnlp-main.98/">SHIELD: Evaluation and Defense Strategies for Copyright Compliance in LLM Text Generation</a></h3>
+          <p class="authors">Xiaoze Liu*, <strong>Ting Sun</strong>*, Tianyang Xu, Feijie Wu, Cunxiang Wang, Xiaoqian Wang, Jing Gao (*Equal contribution)</p>
+          <p class="description">
+            Evaluation suite and lightweight n-gram runtime defense strategies protecting LLMs against copyright extraction and bypass attacks.
+          </p>
+          <div class="paper-footer">
+            <a href="https://aclanthology.org/2024.emnlp-main.98/">Paper</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Ting Sun</span>
+  </footer>
+</div>
+
+</body>
+</html>
