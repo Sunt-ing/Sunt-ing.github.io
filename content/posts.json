@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "inkling-2-small",
+    "date": null,
+    "source": "https://zhuanlan.zhihu.com/p/2107214533513289893",
+    "zh": {
+      "title": "解读 Inkling 2 Small",
+      "description": "从 Relative Attention、Dynamic ShortConv 到 FP4、StableReinforce 与 Customizability，拆解 Inkling 2 Small 的架构与训练。",
+      "category": "模型笔记"
+    },
+    "en": {
+      "title": "Interpreting Inkling 2 Small",
+      "description": "Architecture, FP4 training, StableReinforce, and customizability: a technical look at Thinking Machines Lab’s Inkling 2 Small.",
+      "category": "Model notes"
+    },
+    "subject": "TML"
+  }
+]
