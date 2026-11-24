@@ -21,7 +21,7 @@ def shell(lang, title, description, path, alternate, body):
 <body id="top"><a class="skip" href="#main">{'跳到正文' if zh else 'Skip to content'}</a>
 <header class="site-header"><div class="header-inner"><a class="brand" href="/">Ting Sun <span lang="zh-CN">孙挺</span></a>{navigation(lang, 'writing')}<div class="controls"><nav class="languages" aria-label="Language"><a lang="en" hreflang="en" href="{alternate if zh else path}" {'aria-current="page"' if not zh else ''}>EN</a><a lang="zh-CN" hreflang="zh-CN" href="{path if zh else alternate}" {'aria-current="page"' if zh else ''}>中</a></nav><button class="theme" aria-label="{'切换深浅色主题' if zh else 'Toggle dark theme'}" aria-pressed="false">◐</button></div></div></header>
 {body}
-<footer class="site-footer"><span>© Ting Sun · 孙挺</span><span><a href="https://www.zhihu.com/people/sunt-ing">知乎</a> · <a href="https://github.com/Sunt-ing">GitHub</a> · <a href="mailto:suntcrick@gmail.com">Email</a></span></footer></body></html>'''
+</body></html>'''
 
 def write(path, text):
     p = ROOT/path.lstrip('/')/'index.html'
@@ -57,7 +57,7 @@ for lang in ('zh','en'):
         toc=md.toc
         subject = ' / '+E(post['subject']) if post.get('subject') else ''
         date=f'<time datetime="{post["date"]}">{post["date"]}</time>' if post.get('date') else ''
-        body=f'''<div class="layout"><aside class="sidebar" aria-label="{toc_label}"><div class="eyebrow">{toc_label}</div>{toc}<div class="side-bottom"><a href="{post['source']}">{source_label} ↗</a><a href="/{lang}/blog/">← {'所有文章' if zh else 'All posts'}</a></div></aside><main id="main"><article><header class="post-header"><div class="eyebrow">{E(meta['category'])}{subject}</div><h1>{E(meta['title'])}</h1><p class="post-subtitle">{E(meta['description'])}</p><div class="meta"><span>Ting Sun · 孙挺</span>{date}<span>{timing}</span><a href="{post['source']}">{source_label}</a><a href="{alternate}">{'Read in English' if zh else '阅读中文版'}</a></div></header><details class="mobile-toc"><summary>{toc_label}</summary>{toc}</details><div class="prose">{rendered}</div></article><div class="back-top"><a href="#top">↑ {'回到顶部' if zh else 'Back to top'}</a></div></main></div>'''
+        body=f'''<div class="layout"><aside class="sidebar" aria-label="{toc_label}"><div class="eyebrow">{toc_label}</div>{toc}</aside><main id="main"><article><header class="post-header"><div class="eyebrow">{E(meta['category'])}{subject}</div><h1>{E(meta['title'])}</h1><p class="post-subtitle">{E(meta['description'])}</p><div class="meta"><span>Ting Sun · 孙挺</span>{date}<span>{timing}</span><a href="{post['source']}">{source_label}</a><a href="{alternate}">{'Read in English' if zh else '阅读中文版'}</a></div></header><details class="mobile-toc"><summary>{toc_label}</summary>{toc}</details><div class="prose">{rendered}</div></article><div class="back-top"><a href="#top">↑ {'回到顶部' if zh else 'Back to top'}</a></div></main></div>'''
         write(path,shell(lang,meta['title'],meta['description'],path,alternate,body)); urls.append(path)
         cards.append(f'''<article class="post-card"><div class="eyebrow">{E(meta['category'])}</div><h2><a href="{path}">{E(meta['title'])}</a></h2><p>{E(meta['description'])}</p><div class="meta"><span>{timing}</span><a href="{path}">{'阅读全文' if zh else 'Read article'} →</a><a href="{alternate}">{'English' if zh else '中文'}</a></div></article>''')
     title='TingLog'
